@@ -28,6 +28,8 @@ Follow our simple quickstart instructions [here](quickstart.md)
 - Identify the most effective open source tools evaluated against leading security frameworks
   - Prioritize integration of identified tools 
 - Introduce Terraform configuration files with integrated tools as they are added to SOC-in-a-Box
+- Fill in [Quickstart](quickstart.md) instructions
+- Build out documentation
 - Create a tiered service model. 
   - #### Tier 1
     A self-service tier that will always be free including access to our open source solution and documentation
