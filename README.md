@@ -21,6 +21,9 @@ SOC-in-a-Box finds and integrates the open source tools that best fit the recomm
 ### Who is this for?
 Small businesses make up 99.9% of all U.S. businesses! With a significant amount of those being online, cyber security is a critical consideration to ensure your business and customers stay safe. SOC-in-a-Box helps to make sure you have the security you need without necessarily having all the technical expertise or expense another solution would require.
 
+### How do I start?
+Follow our simple quickstart instructions [here](quickstart.md)
+
 ## On the Roadmap
 - Identify the most effective open source tools evaluated against leading security frameworks
   - Prioritize integration of identified tools 
