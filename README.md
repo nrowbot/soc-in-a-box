@@ -22,14 +22,17 @@ SOC-in-a-Box finds and integrates the open source tools that best fit the recomm
 Small businesses make up 99.9% of all U.S. businesses! With a significant amount of those being online, cyber security is a critical consideration to ensure your business and customers stay safe. SOC-in-a-Box helps to make sure you have the security you need without necessarily having all the technical expertise or expense another solution would require.
 
 ## On the Roadmap
-SOC-in-a-Box plans to create a tiered service model. 
-### Tier 1
-A self-service tier that will always be free including access to our open source solution and documentation
-### Tier 2
-A subscription that includes our setup of SOC-in-a-Box in your cloud environment with access to support
-### Tier 3
-A subscription including Tier 2 plus requests for planning our integration path into the future 
-- What priority should we have for future integration with which tools? 
-- Early access to new integrations
+- Identify the most effective open source tools evaluated against leading security frameworks
+  - Prioritize integration of identified tools 
+- Introduce Terraform configuration files with integrated tools as they are added to SOC-in-a-Box
+- Create a tiered service model. 
+  - #### Tier 1
+    A self-service tier that will always be free including access to our open source solution and documentation
+  - #### Tier 2
+    A subscription that includes our setup of SOC-in-a-Box in your cloud environment with access to support
+  - #### Tier 3
+    A subscription including Tier 2 plus requests for planning our integration path into the future 
+    - What priority should we have for future integration with which tools? 
+    - Early access to new integrations
 
 Have suggestions? Please reach out via [email](mailto:socinabox@pm.me)
