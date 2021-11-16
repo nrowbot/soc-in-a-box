@@ -29,6 +29,7 @@ Follow our simple quickstart instructions [here](quickstart.md)
 ### Explanation
 SOC-in-the-Box is built with extensibility in mind. We want you to be able to easily adapt it to your systems, and make it simple for the community to add new features and integrations. Once you run the terraform configuration in your cloud environment, you will see SOC-in-the-Box running with the following components:
 - **Log Analysis / Alert Generator:** We can take log events and do the analysis for you based on the latest threat detection insights.
+- **SOC Services:** These include the services we integrate into SOC-in-the-Box for you to keep your network secure. You'll find services for things like Host Intrusion Detection, vulnerability scanning, etc. All the services you'd expect to see in a SOC. This will contain a growing list of services, including the best of each category.
 - **Security Events API:** We can also ingest any other alert you throw at us via our Security Event API. These can come from any source you'd like to set up. These are then turned into Security Events.
 - **Security Event Hub:** This is where Security Events are sent to queue up for additional processing. 
 - **Security Events Database:** Security Events are stored here long term with all their associated data. 
