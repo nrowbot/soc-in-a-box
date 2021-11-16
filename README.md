@@ -27,7 +27,17 @@ Follow our simple quickstart instructions [here](quickstart.md)
 ## Diagram
 ![SOC-in-the-Box Diagram](https://lucid.app/publicSegments/view/f787dc13-5b52-42b4-a642-0e5dd69be8c1/image.png)
 ### Explanation
-SOC-in-the-Box is built with extensibility in mind. We can take log events and do the analysis for you based on the latest threat detection insights. But we can also ingest any other alert you throw at us via our Security Event API. These can come from any source you'd like to set up. These are then turned into Security Events, which are sent to the Security Event Hub. Security Events are stored in the Security Event Database. They are also pulled into Security Event Processing, which looks through the Event for different attributes. When a given attribute is found, it triggers a service built for that kind of trigger to collect additional investigation information. At the same time, the Security Even is sent to the Event Correlation service. This service queries the database for correlated events based on correlation rules that are constantly being updated. This all plays into the processing. SOC-in-the-Box will do the work for you in many cases. It will keep you up to date with notifications about the event, information gathered, and actions taken. Anything it can't determine itself, it will send to you, and request input or simply provide all the information you need to act.
+SOC-in-the-Box is built with extensibility in mind. We want you to be able to easily adapt it to your systems, and make it simple for the community to add new features and integrations. 
+- **Log Analysis / Alert Generator:** We can take log events and do the analysis for you based on the latest threat detection insights.
+- **Security Events API:** We can also ingest any other alert you throw at us via our Security Event API. These can come from any source you'd like to set up. These are then turned into Security Events.
+- **Security Event Hub:** This is where Security Events are sent to queue up for additional processing. 
+- **Security Events Database:** Security Events are stored here long term with all their associated data. 
+- **Security Event Processing:** Events are also pulled into the processing service which looks through the Event for different attributes. 
+- **Security Event Attribute Trigger Services:** When a given attribute is found, it triggers a service built for that kind of trigger to collect additional investigation information. 
+- **Event Correlation:** At the same time, the Security Event is sent to the Event Correlation service. This service queries the database for correlated events based on correlation rules that are constantly being updated. This all plays into the processing to provide additional data and inform decision making. SOC-in-the-Box will do the work for you in many cases. 
+- **Security Event Notification API:** As information is discovered, the processing service will post to the Notification API.
+- **Security Event Notification Hub:** Similar to the Event Hub, this is where notifications are sent to queue up.
+- **Notification Service:** This is the service that will keep you up to date with notifications about the event, information gathered, and actions taken. Anything it can't determine itself, it will send to you, and request input or simply provide all the information you need to act.
 
 ## On the Roadmap
 - Identify the most effective open source tools evaluated against leading security frameworks
