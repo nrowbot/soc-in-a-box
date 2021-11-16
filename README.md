@@ -27,7 +27,7 @@ Follow our simple quickstart instructions [here](quickstart.md)
 ## Diagram
 ![SOC-in-the-Box Diagram](https://lucid.app/publicSegments/view/f787dc13-5b52-42b4-a642-0e5dd69be8c1/image.png)
 ### Explanation
-SOC-in-the-Box is built with extensibility in mind. We want you to be able to easily adapt it to your systems, and make it simple for the community to add new features and integrations. 
+SOC-in-the-Box is built with extensibility in mind. We want you to be able to easily adapt it to your systems, and make it simple for the community to add new features and integrations. Once you run the terraform configuration in your cloud environment, you will see SOC-in-the-Box running with the following components:
 - **Log Analysis / Alert Generator:** We can take log events and do the analysis for you based on the latest threat detection insights.
 - **Security Events API:** We can also ingest any other alert you throw at us via our Security Event API. These can come from any source you'd like to set up. These are then turned into Security Events.
 - **Security Event Hub:** This is where Security Events are sent to queue up for additional processing. 
