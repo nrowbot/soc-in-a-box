@@ -24,6 +24,11 @@ Small businesses make up 99.9% of all U.S. businesses! With a significant amount
 ### How do I start?
 Follow our simple quickstart instructions [here](quickstart.md)
 
+## Diagram
+![SOC-in-the-Box Diagram](https://lucid.app/publicSegments/view/dd9afff3-aa12-47c9-8b00-546c1b5c132b/image.png)
+### Explanation
+SOC-in-the-Box is built with extensibility in mind. We can take log events and do the analysis for you based on the latest threat detection insights. But we can also ingest any other alert you throw at us via our Security Event API. These can come from any source you'd like to set up. These are then turned into Security Events, which are sent to the Security Event Hub. Security Events are stored in the Security Event Database. They are also pulled into Security Event Processing, which looks through the Event for different attributes. When a given attribute is found, it triggers a service built for that kind of trigger to collect additional investigation information. At the same time, the Security Even is sent to the Event Correlation service. This service queries the database for correlated events based on correlation rules that are constantly being updated. This all plays into the processing. SOC-in-the-Box will do the work for you in many cases. It will keep you up to date with notifications about the event, information gathered, and actions taken. Anything it can't determine itself, it will send to you, and request input or simply provide all the information you need to act.
+
 ## On the Roadmap
 - Identify the most effective open source tools evaluated against leading security frameworks
   - Prioritize integration of identified tools 
